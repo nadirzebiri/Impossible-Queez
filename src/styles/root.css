@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--primary-darker);
+	color: var(--primary);
+}
+
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0 32px;
+}
+
+button {
+	padding: 17px 0;
+	width: 100%;
+	background-color: var(--primary-darkest);
+	color: var(--primary);
+	border: 3px solid var(--primary-dark);
+}
+
+.color-danger {
+	color: var(--danger);
+}
+
+.color-secondary {
+	color: var(--secondary);
+}
+
+.color-primary-light {
+	color: var(--primary-light);
+}

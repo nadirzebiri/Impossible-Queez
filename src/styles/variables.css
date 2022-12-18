@@ -1,0 +1,23 @@
+:root {
+	/* primary */
+	--primary: rgba(255, 255, 255, 0.87);
+	--primary-light: rgba(255, 255, 255, 0.6);
+	--primary-dark: #262626;
+	--primary-darker: #111111;
+	--primary-darkest: #000000;
+
+	/* other colors */
+	--danger: #ff7b7b;
+	--secondary: #7e7bff;
+
+	/* rainbow */
+	--rainbow-alpha: #521d73;
+	--rainbow-beta: #284285;
+	--rainbow-gamma: #28854d;
+	--rainbow-delta: #854a28;
+	--rainbow-epsilon: #788528;
+	--rainbow-zeta: #852828;
+	--rainbow-lota: #85286b;
+	--rainbow-eta: #00619d;
+	--rainbow-theta: #0740b8;
+}

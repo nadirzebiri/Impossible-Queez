@@ -1,0 +1,16 @@
+.logo {
+	margin-bottom: 20px;
+}
+
+.start-btn {
+	margin-top: 20px;
+	background-color: var(--primary-dark);
+	border: none;
+	border-radius: 6px;
+	padding: 8px 57px;
+	width: fit-content;
+}
+
+.start-btn:hover {
+	filter: brightness(85%);
+}
