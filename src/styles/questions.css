@@ -1,0 +1,9 @@
+.select-questions-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px;
+}
+
+.select-questions-input {
+	width: 51px;
+}
