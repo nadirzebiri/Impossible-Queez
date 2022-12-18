@@ -13,7 +13,7 @@ export default function Error() {
 					<h1 className='color-secondary'>Oops!</h1>
 					<h2>Sorry, an error has occured!</h2>
 					<p className='color-primary-light error-status-text'>
-						{error.statusText}
+						{error.statusText || error.message}
 					</p>
 				</div>
 				<Link to='/' className='btn'>

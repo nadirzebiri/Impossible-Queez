@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import logo from "../assets/logo.svg";
+import logo from "../assets/svg/logo.svg";
 import "../styles/index.css";
 
 export default function Index() {

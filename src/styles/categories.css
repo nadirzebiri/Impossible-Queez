@@ -1,0 +1,12 @@
+.select-category-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 160px;
+	gap: 15px;
+}
+
+.select-category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
