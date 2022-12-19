@@ -30,7 +30,7 @@ export default function Categories() {
 								background: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.img})`,
 							}}
 						>
-							<h2>{category.name}</h2>
+							<p>{category.name}</p>
 						</button>
 					))}
 				</div>

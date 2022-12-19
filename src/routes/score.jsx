@@ -27,7 +27,7 @@ export default function Score() {
 				<h1 className='color-secondary'>
 					Score: {Math.round((getPoints() / getNumAnswers()) * 100)}%
 				</h1>
-				{error ? <p>{error}</p> : <p>You deserve it. Pls Share</p>}
+				{error ? <h2>{error}</h2> : <h2>You deserve it. Pls Share</h2>}
 			</div>
 			<div className='share-social-grid'>
 				<Link className='btn border-color-rainbow-eta' to='#'>
