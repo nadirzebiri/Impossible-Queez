@@ -27,7 +27,7 @@ export default function Categories() {
 							name={category.name}
 							className='select-category'
 							style={{
-								background: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.img})`,
+								backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${category.img})`,
 							}}
 						>
 							<p>{category.name}</p>

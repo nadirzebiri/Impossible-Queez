@@ -43,7 +43,7 @@ input::placeholder {
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
-	margin: 0 32px;
+	margin: 0 var(--container-margin);
 }
 
 .heading {
@@ -52,7 +52,7 @@ input::placeholder {
 
 .btn {
 	display: block;
-	padding: 17px 0;
+	padding: 17px 5px;
 	width: 100%;
 	background-color: var(--primary-darkest);
 	color: var(--primary);

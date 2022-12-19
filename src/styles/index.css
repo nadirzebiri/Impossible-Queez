@@ -1,4 +1,5 @@
 .logo {
+	width: var(--logo-width);
 	margin-bottom: 20px;
 }
 

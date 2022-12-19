@@ -1,4 +1,5 @@
 :root {
+	/** ------------ Colors  ------------ **/
 	/* primary */
 	--primary: rgba(255, 255, 255, 0.87);
 	--primary-light: rgba(255, 255, 255, 0.6);
@@ -20,4 +21,26 @@
 	--rainbow-lota: #85286b;
 	--rainbow-eta: #00619d;
 	--rainbow-theta: #0740b8;
+
+	/** ------------ for Mobile Breakpoint ------------ **/
+	--container-margin: 8%;
+	--logo-width: 130px;
+
+	--p-font-size: 1.6rem;
+	--h1-font-size: 2.1rem;
+	--h2-font-size: 1.8rem;
+}
+
+/** ------------ no tablet Breakpoint ------------ **/
+
+/** ------------ for Desktop Breakpoint ------------ **/
+@media screen and (min-width: 1025px) {
+	:root {
+		--container-margin: 28%;
+		--logo-width: 200px;
+
+		--p-font-size: 1.8rem;
+		--h1-font-size: 3.1rem;
+		--h2-font-size: 2.6rem;
+	}
 }
