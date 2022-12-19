@@ -51,6 +51,7 @@ input::placeholder {
 }
 
 .btn {
+	display: block;
 	padding: 17px 0;
 	width: 100%;
 	background-color: var(--primary-darkest);

@@ -16,6 +16,7 @@ import Quiz, {
 	loader as loaderQuiz,
 	action as actionQuiz,
 } from "./routes/quiz";
+import Score, { loader as loaderScore } from "./routes/score";
 
 // error page
 import Error from "./routes/error";
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
 						element: <Quiz />,
 						loader: loaderQuiz,
 						action: actionQuiz,
+					},
+					{
+						path: "score",
+						element: <Score />,
+						loader: loaderScore,
 					},
 				],
 			},
