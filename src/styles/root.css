@@ -22,7 +22,8 @@ a {
 	color: inherit;
 }
 
-form {
+form,
+div {
 	width: 100%;
 }
 
@@ -67,6 +68,8 @@ input::placeholder {
 	background-color: var(--primary-darkest);
 }
 
+/** ------------ Text Colors  ------------ **/
+
 .color-danger {
 	color: var(--danger);
 }
@@ -77,4 +80,38 @@ input::placeholder {
 
 .color-primary-light {
 	color: var(--primary-light);
+}
+
+/** ------------ Border Colors  ------------ **/
+
+.border-color-rainbow-alpha {
+	border-color: var(--rainbow-alpha);
+}
+
+.border-color-rainbow-gamma {
+	border-color: var(--rainbow-gamma);
+}
+
+.border-color-rainbow-delta {
+	border-color: var(--rainbow-delta);
+}
+
+.border-color-rainbow-epsilon {
+	border-color: var(--rainbow-epsilon);
+}
+
+.border-color-rainbow-zeta {
+	border-color: var(--rainbow-zeta);
+}
+
+.border-color-rainbow-lota {
+	border-color: var(--rainbow-lota);
+}
+
+.border-color-rainbow-eta {
+	border-color: var(--rainbow-eta);
+}
+
+.border-color-rainbow-theta {
+	border-color: var(--rainbow-theta);
 }

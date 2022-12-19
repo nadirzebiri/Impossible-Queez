@@ -1,11 +1,7 @@
-import { Form, useLoaderData, redirect } from "react-router-dom";
+import { Form, redirect } from "react-router-dom";
 import { categories } from "../datas/categories";
 import { setCategorySelected } from "../datas/main.js";
 import "../styles/categories.css";
-
-export function loader() {
-	return { categories };
-}
 
 export async function action({ request }) {
 	const formData = await request.formData();
@@ -16,8 +12,6 @@ export async function action({ request }) {
 }
 
 export default function Categories() {
-	const { categories } = useLoaderData();
-
 	return (
 		<>
 			<div className='heading'>

@@ -1,7 +1,21 @@
 import { redirect } from "react-router-dom";
 import { Form } from "react-router-dom";
-import { setNumQuestionsToBeAsked } from "../datas/main.js";
+import {
+	setNumQuestionsToBeAsked,
+	getCategorySelected,
+} from "../datas/main.js";
 import "../styles/questions.css";
+
+export function loader() {
+	// check if user has selected a category
+	const categorySelected = getCategorySelected();
+
+	if (categorySelected) {
+		return categorySelected;
+	} else {
+		return redirect("/");
+	}
+}
 
 export async function action({ request }) {
 	const formData = await request.formData();
