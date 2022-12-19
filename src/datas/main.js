@@ -39,6 +39,18 @@ export function setNumQuestionsToBeAsked(NumQuestions) {
 	return numQuestionsToBeAsked;
 }
 
+export function setPoints(pointsUpdate) {
+	points = pointsUpdate;
+
+	return points;
+}
+
+export function setQuestionsAnswered(questionsAnsweredUpdate) {
+	questionsAnswered = questionsAnsweredUpdate;
+
+	return questionsAnswered;
+}
+
 // other functions
 export function addPoint() {
 	points++;
@@ -47,6 +59,15 @@ export function addPoint() {
 
 export function addQuestionAnswered(id) {
 	questionsAnswered.push(id);
+}
+
+export function clearGame() {
+	setCategorySelected(null);
+	setNumQuestionsToBeAsked(0);
+	setPoints(0);
+	setQuestionsAnswered([]);
+
+	return null;
 }
 
 // checks if the answer given is right in the question

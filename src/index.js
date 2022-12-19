@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // root route + root index
 import Root from "./routes/root";
-import Index from "./routes/index";
+import Index, { loader as loaderIndex } from "./routes/index";
 
 // routes
 import Categories, { action as actionCategories } from "./routes/categories";
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				children: [
-					{ index: true, element: <Index /> },
+					{ index: true, element: <Index />, loader: loaderIndex },
 					{
 						path: "categories",
 						element: <Categories />,
