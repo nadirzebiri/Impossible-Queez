@@ -1,9 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-import {
-	getPoints,
-	getNumQuestionsToBeAsked,
-	getQuestionsAnswered,
-} from "../datas/main.js";
+import { getPoints, getNumAnswers } from "../datas/main.js";
 
 import facebookIcon from "../assets/svg/facebook-icon.svg";
 import twitterIcon from "../assets/svg/twitter-icon.svg";
@@ -15,7 +11,7 @@ export function loader({ request }) {
 	const error = url.searchParams.get("error");
 
 	// if no question has been answered, get back home
-	if (getQuestionsAnswered().length === 0) {
+	if (getNumAnswers() === 0) {
 		return redirect("/");
 	}
 
@@ -29,7 +25,7 @@ export default function Score() {
 		<>
 			<div className='heading'>
 				<h1 className='color-secondary'>
-					Score: {Math.round(getPoints() / getNumQuestionsToBeAsked() / 100)}%
+					Score: {Math.round((getPoints() / getNumAnswers()) * 100)}%
 				</h1>
 				{error ? <p>{error}</p> : <p>You deserve it. Pls Share</p>}
 			</div>
