@@ -12,7 +12,10 @@ import Questions, {
 	loader as loaderQuestions,
 	action as actionQuestions,
 } from "./routes/questions";
-import Quiz, { loader as loaderQuiz } from "./routes/quiz";
+import Quiz, {
+	loader as loaderQuiz,
+	action as actionQuiz,
+} from "./routes/quiz";
 
 // error page
 import Error from "./routes/error";
@@ -41,6 +44,7 @@ const router = createBrowserRouter([
 						path: "quiz",
 						element: <Quiz />,
 						loader: loaderQuiz,
+						action: actionQuiz,
 					},
 				],
 			},

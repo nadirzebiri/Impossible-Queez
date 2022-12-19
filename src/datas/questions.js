@@ -38,4 +38,24 @@ export const questions = [
 			},
 		],
 	},
+	{
+		id: "1ac",
+		image: null,
+		categoryName: "Cybersecurity",
+		question: "What does the reboot command do on Linux?",
+		choices: [
+			{
+				answer: "Nothing",
+				good: false,
+			},
+			{
+				answer: "Idek",
+				good: false,
+			},
+			{
+				answer: "It reboots lol",
+				good: true,
+			},
+		],
+	},
 ];

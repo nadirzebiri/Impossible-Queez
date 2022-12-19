@@ -88,6 +88,10 @@ input::placeholder {
 	border-color: var(--rainbow-alpha);
 }
 
+.border-color-rainbow-beta {
+	border-color: var(--rainbow-beta);
+}
+
 .border-color-rainbow-gamma {
 	border-color: var(--rainbow-gamma);
 }

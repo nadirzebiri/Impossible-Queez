@@ -49,6 +49,23 @@ export function addQuestionAnswered(id) {
 	questionsAnswered.push(id);
 }
 
+// checks if the answer given is right in the question
+export function checkAnswerFromId(id, answer) {
+	const question = questions.find((question) => question.id === id);
+
+	if (!question) throw new Error("The question answered wasn't found.");
+
+	const isAnswerCorrect = question.choices.find(
+		(choice) => choice.answer === answer
+	).good;
+
+	if (isAnswerCorrect === null) {
+		throw new Error("The answer provided is invalid");
+	}
+
+	return isAnswerCorrect;
+}
+
 // return a number between min (inclusive) and max (inclusive)
 export function getRandomInt(min, max) {
 	min = Math.ceil(min);
@@ -64,9 +81,10 @@ export function getRandomQuestion() {
 			question.categoryName === categorySelected
 	);
 
-	// error if there's no question available
-	if (questionsCanBeAsked.length === 0)
-		throw Error("No more question available");
+	// return null if there's no question available
+	if (questionsCanBeAsked.length === 0) {
+		return null;
+	}
 
 	// get random question from questions filtered
 	return questionsCanBeAsked[getRandomInt(0, questionsCanBeAsked.length - 1)];
