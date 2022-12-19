@@ -117,7 +117,7 @@ export default function Quiz() {
 
 			<div className='game-stats color-primary-light'>
 				<p>
-					Question {numAnswers} / {numQuestionsToBeAsked}
+					Question {numAnswers + 1} / {numQuestionsToBeAsked}
 				</p>
 				<p>Category selected: {categorySelected}</p>
 			</div>
