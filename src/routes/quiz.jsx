@@ -22,6 +22,11 @@ export function loader() {
 		return redirect("/");
 	}
 
+	// redirect to the end if all questions have been asked
+	if (numQuestionsToBeAsked <= numAnswers) {
+		return redirect("/score");
+	}
+
 	// get a random question not already asked
 	const randomQuestion = getRandomQuestion();
 
